@@ -111,13 +111,13 @@ section .btntwo:hover {
     color: #000;
 }
 
-span::after {
-    content: "Kerala";
-    animation: changetext infinte 3s;
+.change_content:after {
     color: #00b894;
+    content: "";
+    animation: text 2.5s linear infinite;
 }
 
-@keyframes changetext {
+@keyframes text {
     0% {
         content: "Darjeeling";
     }
@@ -126,5 +126,8 @@ span::after {
     }
     75% {
         content: "Jaipur";
+    }
+    100% {
+        content: "maharastra";
     }
 }
